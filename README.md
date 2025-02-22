@@ -32,7 +32,7 @@ Google reCAPTCHA API keys (as described inside frontend folder Captcha File)
 1. Clone the repository:
     bash
     git clone https://github.com/your-username/Secure-OTP-Auth-with-Email-reCAPTCHA.git
-    cd otp-verification
+    cd Secure-OTP-Auth-with-Email-reCAPTCHA
     
 
 2. Install backend dependencies:
