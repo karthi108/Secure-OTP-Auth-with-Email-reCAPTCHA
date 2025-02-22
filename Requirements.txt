@@ -1,0 +1,14 @@
+Technologies Used
+Backend: Node.js, Express, Nodemailer
+Frontend: HTML, CSS, JavaScript
+Storage: In-memory OTP storage (can be replaced with a database in production)
+Authentication: Google SMTP for sending OTP emails
+
+
+Installation Prerequisites
+Node.js (v14 or higher)
+npm (Node Package Manager)
+
+From backend dir
+Run node server.js in Terminal
+

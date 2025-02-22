@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Success</title>
+</head> 
+<body> 
+  <section>
+    <div class="form-box">
+      <div class="dashboard-header">
+        <h2>Welcome!</h2>
+
+        <div class="google-search">
+          <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <button id="logout-button">Logout</button>
+      </div>
+    </div>
+  </section>
+  <script src="success.js"></script>
+  <script>
+    document.getElementById("logout-button").addEventListener("click", function() {
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

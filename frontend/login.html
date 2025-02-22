@@ -1,0 +1,36 @@
+<head>
+  <!-- Add this line for reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title> 
+</head> 
+<body>
+  <section>
+    <div class="form-box">
+      <div class="form-value">
+        <form id="login-form">
+          <h2>Login</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" required id="login-email">
+            <label for="login-email">Email</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" required id="login-password">
+            <label for="login-password">Password</label>
+          </div>
+
+          <!-- Add reCAPTCHA here -->
+          <div class="g-recaptcha" data-sitekey="Enter Your Site Key here"></div><!-- Replace Your Site Key here -->
+          
+          <button type="submit">Log in</button>
+          <div class="register">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="login.js"></script>
+</body>

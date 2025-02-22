@@ -1,0 +1,41 @@
+<head>
+  <!-- Add this line for reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Register</title>  
+</head> 
+<body>
+  <section>
+    <div class="form-box">
+      <div class="form-value">
+        <form id="register-form">
+          <h2>Register</h2>
+          <div class="inputbox">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" required id="register-name">
+            <label for="register-name">Full Name</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" required id="register-email">
+            <label for="register-email">Email</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" required id="register-password">
+            <label for="register-password">Password</label>
+          </div>
+
+          <!-- Add reCAPTCHA here -->
+          <div class="g-recaptcha" data-sitekey="Enter Your Site Key here"></div><!-- Replace Your Site Key here -->
+          
+          <button type="submit">Register</button>
+          <div class="register">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="register.js"></script>
+</body>
