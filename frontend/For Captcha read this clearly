@@ -1,0 +1,21 @@
+## Setting Up Google reCAPTCHA
+
+To set up Google reCAPTCHA for your OTP authentication system, follow these steps:
+
+### 1. Create a reCAPTCHA Account
+- Go to [Google reCAPTCHA](https://www.google.com/recaptcha) and sign in with your Google account.
+- Register a new site and select **reCAPTCHA v2** or **reCAPTCHA v3**.
+- Add your domain in the **Domains** section.
+- After registration, you will receive two keys:
+  - **Site Key**: Used in frontend code (HTML)
+  - **Secret Key**: Used in backend validation
+
+### 2. Add the Site Key in HTML Files
+Open the `login.html` and `register.html` files and replace the placeholder with your **Site Key**:
+
+```html
+<!-- login.html -->
+<div class="g-recaptcha" data-sitekey="YOUR_GOOGLE_RECAPTCHA_SITE_KEY"></div>
+
+<!-- register.html -->
+<div class="g-recaptcha" data-sitekey="YOUR_GOOGLE_RECAPTCHA_SITE_KEY"></div>
