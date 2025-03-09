@@ -41,19 +41,29 @@ Google reCAPTCHA API keys (as described inside frontend folder Captcha File)
     npm install
     
 
-3. Set up environment variables:
+3. Set up environment variables: 
+    Generate an App Password
+        Go to Security in your Google Account.
+        Scroll down to "Signing in to Google" and click "App Passwords"
+        Select "Mail" as the app and "Other (Custom name)" for the device.
+        Enter a name (e.g., "My Project Email"), Then generate it.
+   
+   Use the Generated App Password
+    Google will give you a 16-character password (e.g., abcd efgh ijkl mnop)
+    Copy it and use this instead of your actual password in your .env file
     - Copy `.env.example` to `.env` and update the `EMAIL_USER` and `EMAIL_PASS` with your Gmail credentials.
+    
     env
     EMAIL_USER=your-email@gmail.com
     EMAIL_PASS=your-email-password
     
 
-4. Start the backend server:
+5. Start the backend server:
     bash
     node server.js
     
 
-5. Open the frontend files in the `frontend/` folder in your browser. You can open `register.html` to test the registeration and the authentication flow.
+6. Open the frontend files in the `frontend/` folder in your browser. You can open `register.html` to test the registeration and the authentication flow.
 
 ### How it Works
 
